@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="">
+    <input required minlength="3" maxlength="8" type="text" name="fname" placeholder="enter your name"> <br>
+    <input type="email" name="email1" placeholder="enter your email address"><br>
+    <input pattern='^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z0-9])(?!.*\s).{8,20}$'  type="password" placeholder="enter your password"><br>
+    <textarea name="add" cols="30" rows="3" placeholder="Address"></textarea><br>
+    department: <select name="dept" id="">
+        <option value="none">----select a department</option>
+        <option value="cs-ai">computer science with ai</option>
+        <option value="cs">computer science</option>
+        <option value="MCA">master of computer application</option>
+        <option value="ca">computer application</option>
+    </select>
+    <br>gender:<input type="radio" name="gender" value="M"> Male
+    <input type="radio" name="gender" valuer="f"> Female <br>
+    DOB: <input  type="date" name="dob"> <br>
+    SALARY: <input min="4000" max="80000" type="number" name="sal"><br>
+    CHECK IN TIME: <input type="time" name="intime"><br>
+    <br>choose electives:
+    <br><input type="checkbox" name="elective" value="java"> java programming<br>
+    <input type="checkbox" name="elective" value="python"> python programming<br>
+    <input type="checkbox" name="elective" value="django"> web development using django<br>
+    <input type="checkbox" name="elective" value="AI">artificial intelligence <br>
+    <input type="checkbox" name="elective" value="ML">machine learning<br>
+    <input type="reset" value="CLEAR ALL">
+    <input type="submit" value="SAVE">
+    
+    
+</form>
+</body>
+</html>
